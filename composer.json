@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/correios",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "",
+    "description": "Module for calculating the value and estimated time of shipping using Webservice of Correios.",
+    "authors": [
+    {
+        "name": "Willian",
+        "email": "williancordeirodesouza@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
