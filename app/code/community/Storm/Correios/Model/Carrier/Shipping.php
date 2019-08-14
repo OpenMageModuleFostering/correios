@@ -40,7 +40,7 @@ class Storm_Correios_Model_Carrier_Shipping extends Mage_Shipping_Model_Carrier_
             }
 
             foreach ($rates as $rate) {
-                if ($rate->hasError()) {
+                if ($rate->hasError() && !$rate->getShowMessage()) {
                     if ($this->_getHelper()->getConfigData('showmethod')) {
                         $this->_appendError($result, sprintf('%s: %s', $this->_getMethodTitle($rate), $rate->getErrorMessage()));
                     }
@@ -293,6 +293,10 @@ class Storm_Correios_Model_Carrier_Shipping extends Mage_Shipping_Model_Carrier_
     {
         $title = $this->_getHelper()->getMethodTitle($method->getCode());
 
+        if($method->getShowMessage() && $method->hasErrorMessage()) {
+            $title .= sprintf(' - %s', $method->getErrorMessage());
+        }
+        
         if ($includeDeliveryTime) {
             if ($method->getDeliveryTime() > 1) {
                 return $this->_getHelper()->__('%s (%d working days)', $title, $method->getDeliveryTime());
@@ -315,7 +319,7 @@ class Storm_Correios_Model_Carrier_Shipping extends Mage_Shipping_Model_Carrier_
     {
         $freeMethod = $this->getConfigData('free_shipping_method');
 
-        if ($method->hasError() || $method->getPrice() <= 0) {
+        if (($method->hasError() && !$method->getShowMessage()) || $method->getPrice() <= 0) {
             return false;
         }
 
