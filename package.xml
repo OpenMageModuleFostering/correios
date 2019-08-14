@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>correios</name>
-    <version>1.3.1</version>
+    <version>1.3.2</version>
     <stability>stable</stability>
     <license>OSL 3.0</license>
     <channel>community</channel>
@@ -19,11 +19,11 @@ As seguintes fun&#xE7;&#xF5;es est&#xE3;o dispon&#xED;ves:&#xD;
 * Configura&#xE7;&#xE3;o e instala&#xE7;&#xE3;o f&#xE1;cil e intu&#xED;tiva.&#xD;
 &#xD;
 This module is available only to Brazil.</description>
-    <notes>Corre&#xE7;&#xE3;o de bug ao selecionar apenas um dos m&#xE9;todos de entrega.</notes>
+    <notes>Corre&#xE7;&#xE3;o de bug na notifica&#xE7;&#xE3;o de mensagens de alerta sobre as configura&#xE7;&#xF5;es do m&#xE9;todo de entrega na administra&#xE7;&#xE3;o.</notes>
     <authors><author><name>Willian</name><user>willsouza</user><email>williancordeirodesouza@gmail.com</email></author></authors>
     <date>2013-12-05</date>
-    <time>00:27:17</time>
-    <contents><target name="magecommunity"><dir name="Storm"><dir name="Correios"><dir name="Helper"><file name="Data.php" hash="c0344a3cccf20787f115b24cacef68b7"/></dir><dir name="Model"><dir name="Adminhtml"><file name="Observer.php" hash="3e2d7ae7abb9dc2131f2a7868fd89d87"/></dir><dir name="Carrier"><dir name="Package"><file name="Dimension.php" hash="88d12d19a36e753c94f30c08431e9c45"/></dir><dir name="Shipping"><file name="Tracking.php" hash="97c09a03c9bc77ded9e01099887ecb67"/></dir><file name="Shipping.php" hash="e8d22369e1d5e185585684774711776b"/><file name="Webservice.php" hash="e1f0bb7b3d53acbd10c2c550b79fe5a3"/></dir><dir name="Catalog"><dir name="Resource"><file name="Setup.php" hash="833a10b8bc912d3df9818f3b0f86d442"/></dir></dir><dir name="Source"><file name="FreeMethods.php" hash="67646bf270c42fa6fa8b79de336236b3"/><file name="Methods.php" hash="d9118016fe15471f813682385c95a93b"/></dir></dir><dir name="etc"><file name="config.xml" hash="2ba451fdb748cdaf09ecf19c669b0379"/><file name="system.xml" hash="ae02d64e5ad304a3dc256ccdd490d646"/></dir><dir name="sql"><dir name="correios_setup"><file name="mysql4-install-0.1.0.php" hash="dca339c0e46e4b9d116bc1eea9d09930"/></dir></dir></dir></dir></target><target name="magelocale"><dir name="pt_BR"><file name="Storm_Correios.csv" hash="53c7b3305663dea7aff6566acde6b4b4"/></dir></target><target name="mageetc"><dir name="modules"><file name="Storm_Correios.xml" hash="93aa3a9938657131b77fa2a2e60abd71"/></dir></target></contents>
+    <time>00:56:34</time>
+    <contents><target name="magecommunity"><dir name="Storm"><dir name="Correios"><dir name="Helper"><file name="Data.php" hash="c0344a3cccf20787f115b24cacef68b7"/></dir><dir name="Model"><dir name="Adminhtml"><file name="Observer.php" hash="801b6e31dd5b6e33de4f5db4fa65714b"/></dir><dir name="Carrier"><dir name="Package"><file name="Dimension.php" hash="88d12d19a36e753c94f30c08431e9c45"/></dir><dir name="Shipping"><file name="Tracking.php" hash="97c09a03c9bc77ded9e01099887ecb67"/></dir><file name="Shipping.php" hash="e8d22369e1d5e185585684774711776b"/><file name="Webservice.php" hash="e1f0bb7b3d53acbd10c2c550b79fe5a3"/></dir><dir name="Catalog"><dir name="Resource"><file name="Setup.php" hash="833a10b8bc912d3df9818f3b0f86d442"/></dir></dir><dir name="Source"><file name="FreeMethods.php" hash="67646bf270c42fa6fa8b79de336236b3"/><file name="Methods.php" hash="d9118016fe15471f813682385c95a93b"/></dir></dir><dir name="etc"><file name="config.xml" hash="2ba451fdb748cdaf09ecf19c669b0379"/><file name="system.xml" hash="7fc9af5f08e42d25f0fad5b93a1694da"/></dir><dir name="sql"><dir name="correios_setup"><file name="mysql4-install-0.1.0.php" hash="dca339c0e46e4b9d116bc1eea9d09930"/></dir></dir></dir></dir></target><target name="magelocale"><dir name="pt_BR"><file name="Storm_Correios.csv" hash="53c7b3305663dea7aff6566acde6b4b4"/></dir></target><target name="mageetc"><dir name="modules"><file name="Storm_Correios.xml" hash="93aa3a9938657131b77fa2a2e60abd71"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
