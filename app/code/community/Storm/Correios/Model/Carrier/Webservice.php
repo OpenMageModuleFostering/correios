@@ -99,7 +99,7 @@ class Storm_Correios_Model_Carrier_Webservice
 	     ->setParam('nVlAltura', $dimension->getHeight())
 	     ->setParam('nVlLargura', $dimension->getWidth())
 	     ->setParam('nVlDiametro', 0)
-	     ->setParam('sCdMaoPropria', 'N')
+	     ->setParam('sCdMaoPropria', $this->_getHelper()->getConfigData('own_hands') ? 'S' : 'N')
 	     ->setParam('nVlValorDeclarado', 0)
 	     ->setParam('sCdAvisoRecebimento', $this->_getHelper()->getConfigData('receipt_warning') ? 'S' : 'N');
         

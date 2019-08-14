@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>correios</name>
-    <version>1.1.5</version>
+    <version>1.2.6</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL 3.0</license>
     <channel>community</channel>
@@ -20,12 +20,11 @@ As seguintes fun&#xE7;&#xF5;es est&#xE3;o dispon&#xED;ves:&lt;br /&gt;&lt;br /&g
 Caso tenha d&#xFA;vida de como instalar e configurar o m&#xF3;dulo &lt;a href="https://bitbucket.org/willcs/correios/wiki"&gt;acesse nosso Wiki&lt;/a&gt;.&lt;br /&gt;&#xD;
 &lt;hr /&gt;&#xD;
 This module is available only to Brazil.</description>
-    <notes>* Corre&#xE7;&#xE3;o de bug na passagem de par&#xE2;metros para fun&#xE7;&#xE3;o de requisi&#xE7;&#xE3;o do webservice&#xD;
-* Adicionado op&#xE7;&#xE3;o de aviso de recebimento</notes>
+    <notes>* Adicionada op&#xE7;&#xE3;o de m&#xE3;o pr&#xF3;pria</notes>
     <authors><author><name>Willian</name><user>willsouza</user><email>williancordeirodesouza@gmail.com</email></author></authors>
     <date>2013-05-24</date>
-    <time>02:10:10</time>
-    <contents><target name="magecommunity"><dir name="Storm"><dir name="Correios"><dir name="Helper"><file name="Data.php" hash="c0344a3cccf20787f115b24cacef68b7"/></dir><dir name="Model"><dir name="Adminhtml"><file name="Observer.php" hash="3e2d7ae7abb9dc2131f2a7868fd89d87"/></dir><dir name="Carrier"><dir name="Package"><file name="Dimension.php" hash="88d12d19a36e753c94f30c08431e9c45"/></dir><dir name="Shipping"><file name="Tracking.php" hash="97c09a03c9bc77ded9e01099887ecb67"/></dir><file name="Shipping.php" hash="e8d22369e1d5e185585684774711776b"/><file name="Webservice.php" hash="25c7dd9d1cd372c64809111649bc005a"/></dir><dir name="Catalog"><dir name="Resource"><file name="Setup.php" hash="833a10b8bc912d3df9818f3b0f86d442"/></dir></dir><dir name="Source"><file name="FreeMethods.php" hash="67646bf270c42fa6fa8b79de336236b3"/><file name="Methods.php" hash="d9118016fe15471f813682385c95a93b"/></dir></dir><dir name="etc"><file name="config.xml" hash="36060a936ec137400232886f11483783"/><file name="system.xml" hash="bc75566617251c41704332a9bdea3f97"/></dir><dir name="sql"><dir name="correios_setup"><file name="mysql4-install-0.1.0.php" hash="dca339c0e46e4b9d116bc1eea9d09930"/></dir></dir></dir></dir></target><target name="magelocale"><dir name="pt_BR"><file name="Storm_Correios.csv" hash="e01a2a989f734adceb76d204d4514952"/></dir></target><target name="mageetc"><dir name="modules"><file name="Storm_Correios.xml" hash="93aa3a9938657131b77fa2a2e60abd71"/></dir></target></contents>
+    <time>02:21:50</time>
+    <contents><target name="magecommunity"><dir name="Storm"><dir name="Correios"><dir name="Helper"><file name="Data.php" hash="c0344a3cccf20787f115b24cacef68b7"/></dir><dir name="Model"><dir name="Adminhtml"><file name="Observer.php" hash="3e2d7ae7abb9dc2131f2a7868fd89d87"/></dir><dir name="Carrier"><dir name="Package"><file name="Dimension.php" hash="88d12d19a36e753c94f30c08431e9c45"/></dir><dir name="Shipping"><file name="Tracking.php" hash="97c09a03c9bc77ded9e01099887ecb67"/></dir><file name="Shipping.php" hash="e8d22369e1d5e185585684774711776b"/><file name="Webservice.php" hash="000f243dbf32c25e6ddc9eadb0773835"/></dir><dir name="Catalog"><dir name="Resource"><file name="Setup.php" hash="833a10b8bc912d3df9818f3b0f86d442"/></dir></dir><dir name="Source"><file name="FreeMethods.php" hash="67646bf270c42fa6fa8b79de336236b3"/><file name="Methods.php" hash="d9118016fe15471f813682385c95a93b"/></dir></dir><dir name="etc"><file name="config.xml" hash="2ba451fdb748cdaf09ecf19c669b0379"/><file name="system.xml" hash="ae02d64e5ad304a3dc256ccdd490d646"/></dir><dir name="sql"><dir name="correios_setup"><file name="mysql4-install-0.1.0.php" hash="dca339c0e46e4b9d116bc1eea9d09930"/></dir></dir></dir></dir></target><target name="magelocale"><dir name="pt_BR"><file name="Storm_Correios.csv" hash="ab5c76e7e4cd0fcd0317e9d94c930bf6"/></dir></target><target name="mageetc"><dir name="modules"><file name="Storm_Correios.xml" hash="93aa3a9938657131b77fa2a2e60abd71"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
