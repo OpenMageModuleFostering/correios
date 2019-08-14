@@ -22,7 +22,11 @@ class Storm_Correios_Model_Carrier_Webservice
             'trace' => true,
             'exceptions' => true,
             'compression' => SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP,
-            'connection_timeout' => ini_get('max_execution_timeout')
+            'connection_timeout' => ini_get('max_execution_timeout'),
+            'user_agent' => '',
+            'stream_context' => stream_context_create(
+                array('http' => array('protocol_version' => '1.0'))
+            )
         ));
 
         $this->setParam('nCdEmpresa', $this->_getHelper()->getConfigData('account_code'))
