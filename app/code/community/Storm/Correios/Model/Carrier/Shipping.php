@@ -116,6 +116,11 @@ class Storm_Correios_Model_Carrier_Shipping extends Mage_Shipping_Model_Carrier_
      */
     public function isValid(Mage_Shipping_Model_Rate_Request $request)
     {
+        if(!extension_loaded('soap')) {
+            throw new Mage_Shipping_Exception($this->_getHelper()->__('You must to install PHP Soap extension to use shipping method Correios.'));
+            return false;
+        }
+                
 	if (!$this->_getHelper()->isValidPostcode($request->getDestPostcode())) {
 	    throw new Mage_Shipping_Exception($this->_getHelper()->__('Please, enter the postcode correctly.'));
             return false;
@@ -279,7 +284,7 @@ class Storm_Correios_Model_Carrier_Shipping extends Mage_Shipping_Model_Carrier_
 	$title = $this->_getHelper()->getMethodTitle($method->getCode());
 
 	if ($includeDeliveryTime) {
-	    return $this->_getHelper()->__('%s - delivery time %d day(s)', $title, $method->getDeliveryTime());
+	    return $this->_getHelper()->__('%s - %d working day(s)', $title, $method->getDeliveryTime());
 	}
 
 	return $title;

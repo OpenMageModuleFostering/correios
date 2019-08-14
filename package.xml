@@ -1,42 +1,44 @@
 <?xml version="1.0"?>
 <package>
     <name>correios</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL 3.0</license>
     <channel>community</channel>
     <extends/>
-    <summary>Module for calculating the value and estimated time of shipping using Webservice of Correios.</summary>
-    <description>New Correios module developed for version 1.7 with good programming practices.&#xD;
-The module offers the following services to the calculation option without a contract to the Correios:&#xD;
+    <summary>M&#xF3;dulo para o c&#xE1;lculo do valor e tempo estimado de transporte usando Webservice de Correios.</summary>
+    <description>Novo m&#xF3;dulo dos correios desenvolvido para a vers&#xE3;o 1.7 com boas pr&#xE1;ticas de programa&#xE7;&#xE3;o.&#xD;
+O m&#xF3;dulo conta com os seguintes servi&#xE7;os para a op&#xE7;&#xE3;o de c&#xE1;lculo sem contrato com os Correios:&#xD;
 &#xD;
 - Sedex&#xD;
-- Sedex to charge&#xD;
+- Sedex a cobrar&#xD;
 - Sedex 10&#xD;
-- Sedex today&#xD;
+- Sedex hoje&#xD;
 - Pac&#xD;
 &#xD;
-The following delivery services are available with contract:&#xD;
+Os seguintes servi&#xE7;os de entrega est&#xE3;o dispon&#xED;veis com contrato:&#xD;
 &#xD;
 - Sedex&#xD;
-- Sedex to charge&#xD;
+- Sedex a cobrar&#xD;
 - Pac&#xD;
-- E-Sedex&#xD;
-- E-Sedex priority&#xD;
-- E-Sedex Express&#xD;
+- e-Sedex&#xD;
+- e-Sedex priorit&#xE1;rio&#xD;
+- e-Sedex express&#xD;
 &#xD;
-Functions of the module:&#xD;
+Fun&#xE7;&#xF5;es do m&#xF3;dulo:&#xD;
 &#xD;
-* Tracker object in real time&#xD;
-* Choose the method of free shipping smart (following promotion rules)&#xD;
-* Possibility of adding days to the delivery time&#xD;
-* Easy translation of all messages&#xD;
-* Easy setup and intuitive</description>
-    <notes>Fixed package configuration.</notes>
+* Rastreador de objeto em tempo real&#xD;
+* Escolha do m&#xE9;todo de frete gr&#xE1;tis inteligente ( segue regras de promo&#xE7;&#xE3;o )&#xD;
+* Possibilidade de adicionar dias ao prazo de entrega&#xD;
+* F&#xE1;cil tradu&#xE7;&#xE3;o de todas as mensagens&#xD;
+* Configura&#xE7;&#xE3;o f&#xE1;cil e intu&#xED;tiva</description>
+    <notes>* Verifica&#xE7;&#xE3;o da extens&#xE3;o PHP Soap&#xD;
+* Melhorada mensagem de prazo de entrega&#xD;
+* Adicionado link para wiki nas configura&#xE7;&#xF5;es</notes>
     <authors><author><name>Willian</name><user>willsouza</user><email>williancordeirodesouza@gmail.com</email></author></authors>
-    <date>2013-04-22</date>
-    <time>00:58:20</time>
-    <contents><target name="magecommunity"><dir name="Storm"><dir name="Correios"><dir name="Helper"><file name="Data.php" hash="c0344a3cccf20787f115b24cacef68b7"/></dir><dir name="Model"><dir name="Adminhtml"><file name="Observer.php" hash="de0eb1c320ea20a33a886f8604534df0"/></dir><dir name="Carrier"><dir name="Package"><file name="Dimension.php" hash="88d12d19a36e753c94f30c08431e9c45"/></dir><dir name="Shipping"><file name="Tracking.php" hash="6eb85dafb65d4d35bbf36a609905aae7"/></dir><file name="Shipping.php" hash="f37dd71f8c4c4e35fe74b37533dd4fa2"/><file name="Webservice.php" hash="ad74799301196fda9912c1b0da90b1be"/></dir><dir name="Catalog"><dir name="Resource"><file name="Setup.php" hash="833a10b8bc912d3df9818f3b0f86d442"/></dir></dir><dir name="Source"><file name="FreeMethods.php" hash="67646bf270c42fa6fa8b79de336236b3"/><file name="Methods.php" hash="d9118016fe15471f813682385c95a93b"/></dir></dir><dir name="etc"><file name="config.xml" hash="459c9d8eb169ee8f5491570f5d444cc1"/><file name="system.xml" hash="34f656f3890f57add112722e0cd93580"/></dir><dir name="sql"><dir name="correios_setup"><file name="mysql4-install-0.1.0.php" hash="dca339c0e46e4b9d116bc1eea9d09930"/></dir></dir></dir></dir></target><target name="magelocale"><dir name="pt_BR"><file name="Storm_Correios.csv" hash="028e3c6fd7e8192fde8ba836801de613"/></dir></target><target name="mageetc"><dir name="modules"><file name="Storm_Correios.xml" hash="93aa3a9938657131b77fa2a2e60abd71"/></dir></target></contents>
+    <date>2013-04-25</date>
+    <time>23:00:54</time>
+    <contents><target name="magecommunity"><dir name="Storm"><dir name="Correios"><dir name="Helper"><file name="Data.php" hash="c0344a3cccf20787f115b24cacef68b7"/></dir><dir name="Model"><dir name="Adminhtml"><file name="Observer.php" hash="3e2d7ae7abb9dc2131f2a7868fd89d87"/></dir><dir name="Carrier"><dir name="Package"><file name="Dimension.php" hash="88d12d19a36e753c94f30c08431e9c45"/></dir><dir name="Shipping"><file name="Tracking.php" hash="6eb85dafb65d4d35bbf36a609905aae7"/></dir><file name="Shipping.php" hash="0e935cf432af23d09cec5223eea8e786"/><file name="Webservice.php" hash="79c7b0d57285e94b82b1c47521da3675"/></dir><dir name="Catalog"><dir name="Resource"><file name="Setup.php" hash="833a10b8bc912d3df9818f3b0f86d442"/></dir></dir><dir name="Source"><file name="FreeMethods.php" hash="67646bf270c42fa6fa8b79de336236b3"/><file name="Methods.php" hash="d9118016fe15471f813682385c95a93b"/></dir></dir><dir name="etc"><file name="config.xml" hash="98fa5dc22a115d1871a0ceef7c6b0c82"/><file name="system.xml" hash="18357e3ea97d3d5518e2e0b974037941"/></dir><dir name="sql"><dir name="correios_setup"><file name="mysql4-install-0.1.0.php" hash="dca339c0e46e4b9d116bc1eea9d09930"/></dir></dir></dir></dir></target><target name="magelocale"><dir name="pt_BR"><file name="Storm_Correios.csv" hash="2c9c04ccf7044d8f0ed9c93f314d47bc"/></dir></target><target name="mageetc"><dir name="modules"><file name="Storm_Correios.xml" hash="93aa3a9938657131b77fa2a2e60abd71"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><package><name>Mage_Shipping</name><channel>magento-core</channel><min></min><max></max></package></required></dependencies>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

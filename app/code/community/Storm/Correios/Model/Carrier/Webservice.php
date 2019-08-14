@@ -18,17 +18,17 @@ class Storm_Correios_Model_Carrier_Webservice
      */
     public function __construct()
     {
-	$this->_client = new SoapClient(self::WSDL_URL, array(
-	    'trace' => true,
-	    'exceptions' => true,
-	    'compression' => SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP,
-	    'connection_timeout' => ini_get('max_execution_timeout')
-	));
-        
-	$this->setParam('nCdEmpresa', $this->_getHelper()->getConfigData('account_code'))
-	     ->setParam('sDsSenha', $this->_getHelper()->getConfigData('account_password'))
-	     ->setParam('nCdServico', $this->_getHelper()->getConfigData('shipping_methods'))
-	     ->setParam('sCepOrigem', Mage::getStoreConfig('shipping/origin/postcode'));
+        $this->_client = new SoapClient(self::WSDL_URL, array(
+            'trace' => true,
+            'exceptions' => true,
+            'compression' => SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP,
+            'connection_timeout' => ini_get('max_execution_timeout')
+        ));
+
+        $this->setParam('nCdEmpresa', $this->_getHelper()->getConfigData('account_code'))
+             ->setParam('sDsSenha', $this->_getHelper()->getConfigData('account_password'))
+             ->setParam('nCdServico', $this->_getHelper()->getConfigData('shipping_methods'))
+             ->setParam('sCepOrigem', Mage::getStoreConfig('shipping/origin/postcode'));        
     }
     
     /**
@@ -164,7 +164,7 @@ class Storm_Correios_Model_Carrier_Webservice
     
     /**
      * Converts the data returned from webservice to the object
-    * Varien_Object using the parameter names in English
+     * Varien_Object using the parameter names in English
      * 
      * @param stdClass $data
      * @return Varien_Object
