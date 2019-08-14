@@ -86,12 +86,21 @@
 			    <show_in_website>1</show_in_website>
 			    <show_in_store>1</show_in_store>
                         </stated_value>
+                        <receipt_warning>
+                            <label>Use receipt warning</label>
+			    <frontend_type>select</frontend_type>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>                            
+			    <sort_order>9</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+                        </receipt_warning>
 			<free_shipping_method translate="label comment">			    
 			    <label>Free shipping method</label>
 			    <frontend_type>select</frontend_type>
 			    <source_model>correios/source_freeMethods</source_model>
 			    <comment><![CDATA[This method will be applied only when the customer purchase meet the requirements of the rules of promotions.]]></comment>
-			    <sort_order>9</sort_order>
+			    <sort_order>10</sort_order>
 			    <show_in_default>1</show_in_default>
 			    <show_in_website>1</show_in_website>
 			    <show_in_store>1</show_in_store>			    
@@ -100,7 +109,7 @@
 			    <label>Add to delivery time</label>
 			    <frontend_type>text</frontend_type>			    
 			    <comment><![CDATA[Time in days to add to the delivery time of Correios.]]></comment>
-			    <sort_order>10</sort_order>
+			    <sort_order>11</sort_order>
 			    <show_in_default>1</show_in_default>
 			    <show_in_website>1</show_in_website>
 			    <show_in_store>1</show_in_store>			    
@@ -110,7 +119,7 @@
 			    <frontend_type>select</frontend_type>
 			    <source_model>adminhtml/system_config_source_yesno</source_model>
                             <comment><![CDATA[Only if this option is yes the error messages will be displayed]]></comment>
-			    <sort_order>11</sort_order>
+			    <sort_order>12</sort_order>
 			    <show_in_default>1</show_in_default>
 			    <show_in_website>1</show_in_website>
 			    <show_in_store>1</show_in_store>
@@ -119,7 +128,7 @@
                             <label>Show delivery time</label>
 			    <frontend_type>select</frontend_type>
 			    <source_model>adminhtml/system_config_source_yesno</source_model>                            
-			    <sort_order>12</sort_order>
+			    <sort_order>13</sort_order>
 			    <show_in_default>1</show_in_default>
 			    <show_in_website>1</show_in_website>
 			    <show_in_store>1</show_in_store>
@@ -128,7 +137,7 @@
                             <label>Calculate Handling Fee</label>
                             <frontend_type>select</frontend_type>
                             <source_model>shipping/source_handlingType</source_model>
-                            <sort_order>13</sort_order>
+                            <sort_order>14</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -138,7 +147,7 @@
                             <frontend_type>text</frontend_type>
                             <comment><![CDATA[This value will be added on final price of shipping]]></comment>
                             <validate>validate-number</validate>
-                            <sort_order>14</sort_order>
+                            <sort_order>15</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>

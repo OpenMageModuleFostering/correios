@@ -42,3 +42,4 @@
 "The extension of PHP Soap must be installed so that the module Correios to function properly.","A extensão do PHP Soap deve estar instalada para que o módulo dos Correios funcione corretamente."
 "You must to install PHP Soap extension to use shipping method Correios.","Você deve instalar a extensão Soap do PHP para usar o método de entrega dos Correios."
 "Show delivery time","Mostrar o prazo de entrega"
+"Use receipt warning","Usar aviso de recebimento"

@@ -101,12 +101,12 @@ class Storm_Correios_Model_Carrier_Webservice
 	     ->setParam('nVlDiametro', 0)
 	     ->setParam('sCdMaoPropria', 'N')
 	     ->setParam('nVlValorDeclarado', 0)
-	     ->setParam('sCdAvisoRecebimento', 'N');
+	     ->setParam('sCdAvisoRecebimento', $this->_getHelper()->getConfigData('receipt_warning') ? 'S' : 'N');
         
         if($this->_getHelper()->getConfigData('stated_value')) {            
             $this->setParam('nVlValorDeclarado', $request->getPackageValue());
-        }       
-	
+        }
+        
 	$this->_request = $request;
 	return $this;
     }

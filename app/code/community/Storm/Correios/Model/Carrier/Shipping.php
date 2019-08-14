@@ -260,7 +260,7 @@ class Storm_Correios_Model_Carrier_Shipping extends Mage_Shipping_Model_Carrier_
      * @param Varien_Object $request
      * @return Storm_Correios_Model_Carrier_Shipping
      */
-    protected function _setClientRequest(Varien_Object $request)
+    protected function _setClientRequest(array $request)
     {
 	$this->_clientRequest = $request;
 	return $this;
