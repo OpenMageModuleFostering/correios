@@ -51,7 +51,7 @@ class Storm_Correios_Model_Carrier_Shipping extends Mage_Shipping_Model_Carrier_
                 $method->setCarrier($this->_code)
                        ->setCarrierTitle($this->getConfigData('title'))
                        ->setMethod($rate->getCode())
-                       ->setMethodTitle($this->_getMethodTitle($rate, true))		       
+                       ->setMethodTitle($this->_getMethodTitle($rate, $this->_canShowDeliverytime()))		       
                        ->setCost($rate->getPrice())
                        ->setPrice($this->_getFinalPrice($rate, $request));              
 
@@ -63,6 +63,11 @@ class Storm_Correios_Model_Carrier_Shipping extends Mage_Shipping_Model_Carrier_
         } 
 	
 	return $result;
+    }
+    
+    protected function _canShowDeliverytime()
+    {
+        return (bool) $this->_getHelper()->getConfigData('show_deliverytime');
     }
     
     /**
@@ -284,7 +289,11 @@ class Storm_Correios_Model_Carrier_Shipping extends Mage_Shipping_Model_Carrier_
 	$title = $this->_getHelper()->getMethodTitle($method->getCode());
 
 	if ($includeDeliveryTime) {
-	    return $this->_getHelper()->__('%s - %d working day(s)', $title, $method->getDeliveryTime());
+            if($method->getDeliveryTime() > 1) {
+                return $this->_getHelper()->__('%s (%d working days)', $title, $method->getDeliveryTime());
+            } else {
+                return $this->_getHelper()->__('%s (%d working day)', $title, $method->getDeliveryTime());                
+            }
 	}
 
 	return $title;

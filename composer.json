@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "OSL-3.0",
     "homepage": "",
-    "description": "Módulo para o cálculo do valor e tempo estimado de transporte usando Webservice de Correios.",
+    "description": "Módulo de cálculo de frete e prazo de entrega dos Correios com Pac, Sedex, Sedex 10, Sedex Hoje e e-Sedex.",
     "authors": [
     {
         "name": "Willian",
