@@ -82,15 +82,18 @@ class Storm_Correios_Model_Carrier_Shipping_Tracking extends Varien_Object
             if(preg_match_all('/<tr.*?>(.*?)<\/tr>/i', $response, $rows)) {
                 foreach($rows[1] as $row) {
                     preg_match_all('/<td.*?>(.*?)<\/td>/i', $row, $cols);
-                    list($deliverydate, $deliverytime) = explode(' ', $cols[1][0]);           
-                    $deliverydate = new Zend_Date($deliverydate, 'dd/MM/YYYY', new Zend_Locale('pt_BR'));
 
-                    $data[] = array(
-                        'activity' => strip_tags($cols[1][2]),
-                        'deliverydate' => $deliverydate->toString('YYYY-MM-dd'),
-                        'deliverytime' => sprintf('%s:00', $deliverytime),
-                        'deliverylocation' => $cols[1][1]
-                    );
+                    if(count($cols[1]) > 1) {
+                        list($deliverydate, $deliverytime) = explode(' ', $cols[1][0]);           
+                        $deliverydate = new Zend_Date($deliverydate, 'dd/MM/YYYY', new Zend_Locale('pt_BR'));
+
+                        $data[] = array(
+                            'activity' => strip_tags($cols[1][2]),
+                            'deliverydate' => $deliverydate->toString('YYYY-MM-dd'),
+                            'deliverytime' => sprintf('%s:00', $deliverytime),
+                            'deliverylocation' => $cols[1][1]
+                        );
+                    }
                 }
 
                 return $data;
