@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/correios",
+    "name": "OpenMageModuleFostering\/correios",
     "type": "magento-module",
     "license": "OSL-3.0",
     "homepage": "",
-    "description": "Módulo de cálculo de frete e prazo de entrega dos Correios com Pac, Sedex, Sedex 10, Sedex Hoje e e-Sedex.",
+    "description": "M\u00f3dulo de c\u00e1lculo de frete e prazo de entrega dos Correios com Pac, Sedex, Sedex 10, Sedex Hoje e e-Sedex.",
     "authors": [
-    {
-        "name": "Willian",
-        "email": "williancordeirodesouza@gmail.com"
-    }
-],
+        {
+            "name": "Willian",
+            "email": "williancordeirodesouza@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
